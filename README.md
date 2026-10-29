@@ -1,0 +1,129 @@
+Smart Vehicle Breakdown Assistant System
+Team Members
+Name	ID Number
+Harshini	2420030323
+Vardhini	2420030677
+Lasya	2420030686
+Supervisor
+Supervisor Name: K.Venkateshwari
+Abstract
+The Smart Vehicle Breakdown Assistant System is a web-based application designed to help users during vehicle breakdowns by providing a simple platform to report problems and request roadside assistance. Traditional vehicle breakdown services often require users to search manually for mechanics or towing services, which can be time-consuming, especially during emergencies. The proposed system allows users to register their vehicles, report breakdowns, enter their location, and identify possible vehicle problems through a dataset-based diagnosis system. It also helps users find available mechanics, request assistance, and view the mechanic's location on a map. Mechanics can log in to view pending assistance requests, accept or reject requests, update their availability, and share their current location. The system uses a web interface, backend APIs, and a MySQL database to manage vehicle details, breakdown reports, mechanics, and assistance requests.
+Objectives
+•	Provide an easy platform to report vehicle breakdowns.
+•	Maintain user and vehicle information.
+•	Identify possible causes of vehicle problems.
+•	Help users find available mechanics.
+•	Allow users to request roadside assistance.
+•	Enable mechanics to accept or reject assistance requests.
+•	Display the mechanic's location on a map.
+•	Allow mechanics to update their availability.
+•	Store breakdown and assistance details in a database.
+•	Reduce the time required to find roadside assistance.
+Key Features
+•	User Registration and Login
+•	Mechanic Login
+•	Vehicle Registration
+•	Breakdown Reporting
+•	User Location Detection
+•	Dataset-Based Vehicle Diagnosis
+•	Available Mechanic Listing
+•	Roadside Assistance Requests
+•	Accept or Reject Assistance Requests
+•	Mechanic Availability Management
+•	Mechanic GPS Location Updates
+•	Map-Based Mechanic Tracking
+•	MySQL Database Management
+Technologies Used
+•	Frontend: HTML5, CSS3, JavaScript
+•	Backend: Node.js, Express.js, REST APIs
+•	Database: MySQL
+•	Maps and Location: Leaflet.js, OpenStreetMap, GPS/Geolocation
+•	Diagnosis: CSV dataset-based problem matching
+•	Development Tools: Visual Studio Code, Postman, MySQL
+•	Version Control: Git and GitHub
+Project Structure
+SmartVehicleBreakdownSystem/
+├── frontend/
+│   ├── index.html
+│   ├── user.html
+│   ├── mechanic.html
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env
+│   ├── database/
+│   │   └── database.sql
+│   └── data/
+│       └── vehicle_service_diagnosis_dataset.csv
+└── README.md
+How to Run the Project
+Prerequisites
+•	Node.js
+•	MySQL Server
+•	Visual Studio Code
+•	Live Server extension for Visual Studio Code
+Step 1: Clone the Repository
+Replace <your-github-repository-url> with your repository URL.
+git clone <your-github-repository-url>
+cd SmartVehicleBreakdownSystem
+Step 2: Configure the Database
+Start MySQL Server, open MySQL Workbench or another MySQL client, and run the SQL file at backend/database/database.sql. Update the database credentials in backend/.env.
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=smart_vehicle_breakdown
+DB_PORT=3306
+Replace the example password with your local MySQL password. Do not commit the .env file to GitHub.
+Step 3: Install Backend Dependencies
+cd backend
+npm install
+Step 4: Start the Backend Server
+node server.js
+The backend server should run at http://localhost:5000. Keep the terminal open.
+Step 5: Start the Frontend
+Open the frontend folder in Visual Studio Code, open index.html, and select Open with Live Server. Use the application in your browser.
+Step 6: Test the Application
+Use demo accounts only if they are configured in your database. Confirm the credentials before presenting.
+Role	Phone Number	Password
+User	9876543210	123456
+Mechanic	9000000001	123456
+System Modules
+1. User Module
+•	Log in to the application.
+•	Register vehicle details.
+•	Report a vehicle breakdown.
+•	View possible causes of vehicle problems.
+•	Find available mechanics.
+•	Request roadside assistance.
+•	Track the mechanic's reported location on a map.
+2. Mechanic Module
+•	Log in to the mechanic dashboard.
+•	View pending assistance requests.
+•	Accept or reject requests.
+•	Update availability.
+•	Share GPS location for user tracking.
+3. Diagnosis Module
+•	Accept vehicle problem descriptions.
+•	Match descriptions against the available diagnosis dataset.
+•	Display possible causes and suggestions when a match is found.
+4. Database Module
+•	Store user and mechanic information.
+•	Maintain vehicle details.
+•	Record breakdown reports.
+•	Store assistance requests and their statuses.
+•	Maintain mechanic availability and location details.
+Future Enhancements
+•	Implement machine-learning-based vehicle fault prediction.
+•	Recommend mechanics based on distance and availability.
+•	Display estimated mechanic arrival times.
+•	Add notifications for assistance request updates.
+•	Improve diagnosis accuracy using a larger dataset.
+•	Add ratings and feedback for mechanics.
+•	Integrate online payment for repair services.
+•	Maintain a detailed breakdown and service history.
+Conclusion
+The Smart Vehicle Breakdown Assistant System provides a convenient platform for reporting vehicle breakdowns, identifying possible vehicle problems, finding available mechanics, and requesting roadside assistance. By combining web technologies, database management, location services, and dataset-based diagnosis, the system aims to simplify access to roadside assistance and improve the overall user experience.
+
